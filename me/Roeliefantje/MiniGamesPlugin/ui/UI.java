@@ -7,6 +7,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 import me.Roeliefantje.MiniGamesPlugin.Main;
+import me.Roeliefantje.MiniGamesPlugin.Minigames.BlockShuffle;
 import me.Roeliefantje.MiniGamesPlugin.utils.Utils;
 
 public class UI {
@@ -54,6 +55,7 @@ public class UI {
 		if (clicked.getItemMeta().getDisplayName().equals(Utils.chat("&bBLOCK SHUFFLE"))){
 			p.sendMessage(Utils.chat("&b Not implemented yet!"));
 			p.closeInventory();
+			new BlockShuffle();
 		}
 		if (clicked.getItemMeta().getDisplayName().equals(Utils.chat("&5DEATH SWAP"))){
 			p.sendMessage(Utils.chat("&b Not implemented yet!"));
