@@ -1,0 +1,7 @@
+main: me.Roeliefantje.MiniGamesPlugin.Main
+name: MiniGames
+version: 1.0
+author: Roeliefantje
+
+commands:
+  play:
