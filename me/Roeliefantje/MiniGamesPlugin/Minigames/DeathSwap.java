@@ -7,6 +7,7 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 import me.Roeliefantje.MiniGamesPlugin.Main;
+import me.Roeliefantje.MiniGamesPlugin.listeners.DeathSwapListener;
 import me.Roeliefantje.MiniGamesPlugin.ui.UI;
 import me.Roeliefantje.MiniGamesPlugin.utils.Utils;
 
@@ -29,6 +30,8 @@ public class DeathSwap {
 		Bukkit.getScheduler().scheduleSyncRepeatingTask(plugin, new Runnable() {
 			public void run() { teleportPlayers();}
 		}, 300 * 20, 300 * 20);
+		
+		new DeathSwapListener(this);
 	}
 	
 	private void teleportPlayers() {
