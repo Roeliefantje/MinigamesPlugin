@@ -48,21 +48,21 @@ public class UI {
 	
 	public static void clicked(Player p, int slot, ItemStack clicked, Inventory inv) {
 		if (clicked.getItemMeta().getDisplayName().equals(Utils.chat("&4MANHUNT"))){
-			p.sendMessage(Utils.chat("&b Starting Manhunt!"));
+			p.sendMessage(Utils.chat("&bStarting Manhunt!"));
 			p.closeInventory();
 			UI.openManhunt(p);
 		}
 		if (clicked.getItemMeta().getDisplayName().equals(Utils.chat("&bBLOCK SHUFFLE"))){
-			p.sendMessage(Utils.chat("&b Not implemented yet!"));
+			p.sendMessage(Utils.chat("&bStarting blockshuffle!"));
 			p.closeInventory();
 			new BlockShuffle();
 		}
 		if (clicked.getItemMeta().getDisplayName().equals(Utils.chat("&5DEATH SWAP"))){
-			p.sendMessage(Utils.chat("&b Not implemented yet!"));
+			p.sendMessage(Utils.chat("&bStart Death Swap!"));
 			p.closeInventory();
 		}
 		if (clicked.getItemMeta().getDisplayName().equals(Utils.chat("&bRANDOM BLOCK DROPS"))){
-			p.sendMessage(Utils.chat("&b Not implemented yet!"));
+			p.sendMessage(Utils.chat("&bNot implemented yet!"));
 			p.closeInventory();
 		}
 	}
